@@ -1,0 +1,49 @@
+@model List<Livro>
+
+<body>
+
+    <h1>Livros</h1>
+
+    <a asp-controller="Livro" asp-action="Create">
+        Novo Livro
+    </a>
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Titulo</th>
+                <th>Autor</th>
+                <th>Genero</th>
+                <th>Ano</th>
+                <th>Páginas</th>
+                <th>Sinopse</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            @foreach (var livro in Model)
+            {
+                <tr>
+                    <td>@livro.Titulo</td>
+                    <td>@livro.Autor</td>
+                    <td>@livro.Genero</td>
+                    <td>@livro.AnoPublicacao</td>
+                    <td>@livro.QuantidadePaginas</td>
+                    <td>@livro.Sinopse</td>
+
+                    <td>
+                        <button>Editar</button>
+                        <button>Excluir</button>
+                    </td>
+
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+
+</body>

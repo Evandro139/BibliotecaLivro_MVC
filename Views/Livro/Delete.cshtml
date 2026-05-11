@@ -1,0 +1,24 @@
+@model Livro
+
+<body>
+
+    <h1>Excluir Livro</h1>
+
+    <h3>Deseja realmente excluir este livro?</h3>
+
+    <div>
+        <p><strong>Titulo:</strong> @Model.Titulo</p>
+        <p><strong>Autor:</strong> @Model.Autor</p>
+    </div>
+
+    <form asp-controller="Livro" asp-action="DeleteConfirm" method="post">
+
+        <input type="hidden" asp-for="Id" />
+
+        <button type="submit">
+            Excluir
+        </button>
+
+    </form>
+
+</body>
