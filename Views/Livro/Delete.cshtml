@@ -1,24 +1,11 @@
-@model Livro
+@model BibliotecaLivro_MVC.Models.Livro
 
-<body>
+<h1>Deletar Livro</h1>
 
-    <h1>Excluir Livro</h1>
+<form asp-action="Delete" method="post">
 
-    <h3>Deseja realmente excluir este livro?</h3>
+    <label>Digite o ID do livro:</label>
+    <input type="number" name="id" />
 
-    <div>
-        <p><strong>Titulo:</strong> @Model.Titulo</p>
-        <p><strong>Autor:</strong> @Model.Autor</p>
-    </div>
-
-    <form asp-controller="Livro" asp-action="DeleteConfirm" method="post">
-
-        <input type="hidden" asp-for="Id" />
-
-        <button type="submit">
-            Excluir
-        </button>
-
-    </form>
-
-</body>
+    <button type="submit">Deletar</button>
+</form>

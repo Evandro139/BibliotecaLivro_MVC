@@ -38,6 +38,9 @@ namespace BibliotecaLivro_MVC.Repository
         {
             Livro livro = BuscarPorId(id);
 
+            if (livro == null)
+                return;
+
             _context.Livro.Remove(livro);
             _context.SaveChanges();
         }

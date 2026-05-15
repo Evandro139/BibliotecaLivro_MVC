@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BibliotecaLivro_MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b3301e41be83d6a14ff0bb0a23811478cabb8d88")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+668f9752e26c75ae2682772487996e7f2bdba238")]
 [assembly: System.Reflection.AssemblyProductAttribute("BibliotecaLivro_MVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BibliotecaLivro_MVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

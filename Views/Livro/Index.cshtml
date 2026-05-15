@@ -31,12 +31,12 @@
                     <td>@livro.Autor</td>
                     <td>@livro.Genero</td>
                     <td>@livro.AnoPublicacao</td>
-                    <td>@livro.QuantidadePaginas</td>
+                    @* <td>@livro.QuantidadePaginas</td> *@
                     <td>@livro.Sinopse</td>
 
                     <td>
-                        <button>Editar</button>
-                        <button>Excluir</button>
+                        <a asp-controller="Livro" asp-action="Edit" asp-route-id="@livro.Id">Editar</a>
+                        <a asp-controller="Livro" asp-action="Delete" asp-route-id="@livro.Id">Excluir</a>
                     </td>
 
                 </tr>

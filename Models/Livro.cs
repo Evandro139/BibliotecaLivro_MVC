@@ -9,17 +9,17 @@ namespace BibliotecaLivro_MVC.Models
     {
         public int Id { get; set; }
 
-        public string Titulo { get; set; }
+        public string? Titulo { get; set; }
 
-        public string Autor { get; set; }
+        public string? Autor { get; set; }
 
-        public string Genero { get; set; }
+        public string? Genero { get; set; }
 
         public int AnoPublicacao { get; set; }
 
-        public int QuantidadePaginas { get; set; }
+        // public int QuantidadePaginas { get; set; }
 
-        public string Sinopse { get; set; }
+        public string? Sinopse { get; set; }
 
         public DateTime DataCadastro { get; set; }
     }
